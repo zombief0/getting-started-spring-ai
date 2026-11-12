@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: getting-started
+  ai:
+    model:
+      chat: openai
+    openai:
+      api-key: ${GROQ_API_KEY}
+      base-url: https://api.groq.com/openai/v1
+      chat:
+        model: openai/gpt-oss-120b
+
+logging:
+  level:
+    web: DEBUG
+
